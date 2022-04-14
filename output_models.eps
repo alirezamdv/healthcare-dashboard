@@ -1,0 +1,4399 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.44.1 (20200629.0846)
+%%Title: model_graph
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1314 2268
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 1278 2232 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% django_contrib_auth_models_Permission
+gsave
+0 0 1 nodecolor
+newpath 157.5 203.5 moveto
+157.5 278.5 lineto
+322.5 278.5 lineto
+322.5 203.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 159 256 moveto
+159 277 lineto
+322 277 lineto
+322 256 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+196.5 265 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+206.5 265 moveto 78 (    Permission    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+161 248.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 248.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+179 248.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+238 248.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+248 248.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+288 248.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+161 235.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 235.6 moveto 53 (content_type) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+224 235.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+238 235.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+248 235.6 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+310 235.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+161 222.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 222.6 moveto 38 (codename) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+209 222.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+238 222.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+248 222.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+284 222.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+161 209.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 209.6 moveto 21 (name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+192 209.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+238 209.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+248 209.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+284 209.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 157.5 203.5 moveto
+157.5 278.5 lineto
+322.5 278.5 lineto
+322.5 203.5 lineto
+closepath stroke
+grestore
+% django_contrib_contenttypes_models_ContentType
+gsave
+0 0 1 nodecolor
+newpath 336.5 4 moveto
+336.5 66 lineto
+461.5 66 lineto
+461.5 4 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 338 44 moveto
+338 65 lineto
+461 65 lineto
+461 44 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+352.5 53 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+362.5 53 moveto 84 (    ContentType    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+340 36.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+350 36.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+358 36.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+399 36.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+409 36.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+449 36.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+340 23.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+350 23.6 moveto 35 (app_label) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+385 23.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+399 23.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+409 23.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+445 23.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+340 10.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+350 10.6 moveto 22 (model) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+372 10.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+399 10.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+409 10.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+445 10.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 336.5 4 moveto
+336.5 66 lineto
+461.5 66 lineto
+461.5 4 lineto
+closepath stroke
+grestore
+% django_contrib_auth_models_Permission->django_contrib_contenttypes_models_ContentType
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 256.6506 191.7863 moveto
+269.4778 159.7139 289.6597 118.1071 317 88 curveto
+322.893 81.5106 329.7752 75.5121 337.0017 70.0727 curveto
+stroke
+0 0 0 edgecolor
+255.1655 195.5805 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+255.1655 195.5805 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+317 90.6 moveto 95 ( content_type \(permission\)) alignedtext
+grestore
+% django_contrib_auth_models_Group
+gsave
+0 0 1 nodecolor
+newpath 208.5 481.5 moveto
+208.5 530.5 lineto
+319.5 530.5 lineto
+319.5 481.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 210 508 moveto
+210 529 lineto
+319 529 lineto
+319 508 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+232.5 517 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+242.5 517 moveto 54 (    Group    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+212 500.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+222 500.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+230 500.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+257 500.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+267 500.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+307 500.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+212 487.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+222 487.6 moveto 21 (name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+243 487.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+257 487.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+267 487.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+303 487.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 208.5 481.5 moveto
+208.5 530.5 lineto
+319.5 530.5 lineto
+319.5 481.5 lineto
+closepath stroke
+grestore
+% django_contrib_auth_models_Group->django_contrib_auth_models_Permission
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 260.7422 469.3002 moveto
+256.5247 423.0827 249.157 342.3454 244.4327 290.5755 curveto
+stroke
+0 0 0 edgecolor
+261.1134 473.368 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+261.1134 473.368 4 4 ellipse_path stroke
+0 0 0 edgecolor
+244.0617 286.5087 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+244.0617 286.5087 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+255 392.1 moveto 74 ( permissions \(group\)) alignedtext
+grestore
+% django_contrib_sessions_base_session_AbstractBaseSession
+gsave
+0 0 1 nodecolor
+newpath 960.5 1163 moveto
+960.5 1212 lineto
+1109.5 1212 lineto
+1109.5 1163 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 962 1189.5 moveto
+962 1210.5 lineto
+1109 1210.5 lineto
+1109 1189.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+968.5 1198.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+978.5 1198.5 moveto 124 (    AbstractBaseSession    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+964 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+974 1182.1 moveto 43 (expire_date) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1017 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1035 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1045 1182.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1097 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+964 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+974 1169.1 moveto 47 (session_data) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1021 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1035 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1045 1169.1 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1077 1169.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 960.5 1163 moveto
+960.5 1212 lineto
+1109.5 1212 lineto
+1109.5 1163 lineto
+closepath stroke
+grestore
+% django_contrib_sessions_models_Session
+gsave
+0 0 1 nodecolor
+newpath 959.5 1848 moveto
+959.5 1919 lineto
+1110.5 1919 lineto
+1110.5 1848 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 961 1887.5 moveto
+961 1917.5 lineto
+1110 1917.5 lineto
+1110 1887.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+1005.5 1905.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+1015.5 1905.5 moveto 50 (    Session) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+972.5 1895.5 moveto 7 (<) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+979.5 1895.5 moveto 100 (AbstractBaseSession) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+1079.5 1895.5 moveto 19 (>    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+963 1880.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+973 1880.1 moveto 49 (session_key) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1022 1880.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1036 1880.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1046 1880.1 moveto 39 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1085 1880.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+963 1867.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+973 1867.1 moveto 43 (expire_date) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1016 1867.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1036 1867.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1046 1867.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1098 1867.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+963 1854.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+973 1854.1 moveto 47 (session_data) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1020 1854.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1036 1854.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1046 1854.1 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1078 1854.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 959.5 1848 moveto
+959.5 1919 lineto
+1110.5 1919 lineto
+1110.5 1848 lineto
+closepath stroke
+grestore
+% django_contrib_sessions_models_Session->django_contrib_sessions_base_session_AbstractBaseSession
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1035 1843.7005 moveto
+1035 1721.7804 1035 1347.3262 1035 1226.5074 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1038.5001 1226.275 moveto
+1035 1216.2751 lineto
+1031.5001 1226.2751 lineto
+closepath stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+1039.5 1518.6 moveto 31 ( abstract) alignedtext
+0 0 0 edgecolor
+8 /Roboto set_font
+1035 1509.6 moveto 40 (inheritance) alignedtext
+grestore
+% django_contrib_sites_models_Site
+gsave
+0 0 1 nodecolor
+newpath 1144.5 1852.5 moveto
+1144.5 1914.5 lineto
+1261.5 1914.5 lineto
+1261.5 1852.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 1146 1892.5 moveto
+1146 1913.5 lineto
+1261 1913.5 lineto
+1261 1892.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+1177 1901.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+1187 1901.5 moveto 43 (    Site    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1148 1885.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1158 1885.1 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1166 1885.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1199 1885.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1209 1885.1 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1249 1885.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1148 1872.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1158 1872.1 moveto 27 (domain) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1185 1872.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1199 1872.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1209 1872.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1245 1872.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1148 1859.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1158 1859.1 moveto 21 (name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1179 1859.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1199 1859.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1209 1859.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1245 1859.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 1144.5 1852.5 moveto
+1144.5 1914.5 lineto
+1261.5 1914.5 lineto
+1261.5 1852.5 lineto
+closepath stroke
+grestore
+% django_contrib_admin_models_LogEntry
+gsave
+0 0 1 nodecolor
+newpath 8 1124 moveto
+8 1251 lineto
+212 1251 lineto
+212 1124 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 9 1228.5 moveto
+9 1249.5 lineto
+211 1249.5 lineto
+211 1228.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+71.5 1237.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+81.5 1237.5 moveto 67 (    LogEntry    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+21 1221.1 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+29 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+109 1221.1 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+149 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1208.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+21 1208.1 moveto 53 (content_type) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+74 1208.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1208.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+109 1208.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 1208.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+21 1195.1 moveto 18 (user) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+39 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+109 1195.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+171 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+21 1182.1 moveto 39 (action_flag) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+60 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+109 1182.1 moveto 90 (PositiveSmallIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+199 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+21 1169.1 moveto 41 (action_time) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+62 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+109 1169.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+161 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1156.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+21 1156.1 moveto 64 (change_message) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+85 1156.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1156.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+109 1156.1 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+141 1156.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1143.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+21 1143.1 moveto 32 (object_id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+53 1143.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1143.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+109 1143.1 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+141 1143.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+11 1130.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+21 1130.1 moveto 41 (object_repr) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+62 1130.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+99 1130.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+109 1130.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+145 1130.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 8 1124 moveto
+8 1251 lineto
+212 1251 lineto
+212 1124 lineto
+closepath stroke
+grestore
+% django_contrib_admin_models_LogEntry->django_contrib_contenttypes_models_ContentType
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 106.4647 1111.745 moveto
+102.6151 1023.7804 97 873.3084 97 744 curveto
+97 744 97 744 97 240 curveto
+97 181.2492 97.7309 155.8042 140 115 curveto
+190.649 66.1064 270.667 47.3823 328.3636 40.2622 curveto
+stroke
+0 0 0 edgecolor
+106.6436 1115.802 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+106.6436 1115.802 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+97 504.1 moveto 85 ( content_type \(logentry\)) alignedtext
+grestore
+% dashboard_users_models_User
+gsave
+0 0 1 nodecolor
+newpath 287 649 moveto
+287 837 lineto
+435 837 lineto
+435 649 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 288 806 moveto
+288 836 lineto
+434 836 lineto
+434 806 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+339 824 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+349 824 moveto 34 (    User) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+317.5 814 moveto 7 (<) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+324.5 814 moveto 61 (AbstractUser) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+385.5 814 moveto 19 (>    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 798.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 798.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+308 798.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 798.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 798.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+410 798.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 785.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 785.6 moveto 42 (date_joined) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+342 785.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 785.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 785.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+422 785.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 772.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+300 772.6 moveto 19 (email) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+319 772.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 772.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 772.6 moveto 37 (EmailField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+407 772.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 759.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+300 759.6 moveto 38 (first_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+338 759.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 759.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 759.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 759.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 746.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 746.6 moveto 31 (is_active) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+331 746.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 746.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 746.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+417 746.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 733.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 733.6 moveto 25 (is_staff) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+325 733.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 733.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 733.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+417 733.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 720.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 720.6 moveto 46 (is_superuser) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+346 720.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 720.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 720.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+417 720.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 707.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+300 707.6 moveto 34 (last_login) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+334 707.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 707.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 707.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+422 707.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 694.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+300 694.6 moveto 37 (last_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+337 694.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 694.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 694.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 694.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 681.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+300 681.6 moveto 21 (name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+321 681.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 681.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 681.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 681.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 668.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 668.6 moveto 35 (password) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+335 668.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 668.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 668.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 668.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+290 655.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+300 655.6 moveto 37 (username) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+337 655.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 655.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 655.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 655.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 287 649 moveto
+287 837 lineto
+435 837 lineto
+435 649 lineto
+closepath stroke
+grestore
+% django_contrib_admin_models_LogEntry->dashboard_users_models_User
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 113.9327 1111.9107 moveto
+120.9109 1041.167 140.1477 934.7215 193 859 curveto
+214.7473 827.8426 247.8545 802.5741 278.9462 783.7429 curveto
+stroke
+0 0 0 edgecolor
+113.5537 1115.9446 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+113.5537 1115.9446 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+193 861.6 moveto 55 ( user \(logentry\)) alignedtext
+grestore
+% rest_framework_authtoken_models_Token
+gsave
+0 0 1 nodecolor
+newpath 442 1156.5 moveto
+442 1218.5 lineto
+596 1218.5 lineto
+596 1156.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 443 1196.5 moveto
+443 1217.5 lineto
+595 1217.5 lineto
+595 1196.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+487.5 1205.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+497.5 1205.5 moveto 53 (    Token    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+445 1189.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+455 1189.1 moveto 14 (key) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 1189.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+497 1189.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+507 1189.1 moveto 39 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+546 1189.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+445 1176.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+455 1176.1 moveto 18 (user) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+473 1176.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+497 1176.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+507 1176.1 moveto 76 (OneToOneField \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+583 1176.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+445 1163.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+455 1163.1 moveto 28 (created) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+483 1163.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+497 1163.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+507 1163.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+559 1163.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 442 1156.5 moveto
+442 1218.5 lineto
+596 1218.5 lineto
+596 1156.5 lineto
+closepath stroke
+grestore
+% rest_framework_authtoken_models_Token->dashboard_users_models_User
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 508.6911 1152.4113 moveto
+491.5414 1096.3812 455.5143 981.5027 420 886 curveto
+414.5567 871.3621 408.5201 855.9991 402.4458 841.0067 curveto
+stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+413 861.6 moveto 67 ( user \(auth_token\)) alignedtext
+grestore
+% background_task_models_Task
+gsave
+0 0 1 nodecolor
+newpath 356.5 119 moveto
+356.5 363 lineto
+561.5 363 lineto
+561.5 119 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 358 341 moveto
+358 362 lineto
+561 362 lineto
+561 341 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+431.5 350 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+441.5 350 moveto 46 (    Task    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 333.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+378 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 333.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+519 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 320.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 320.6 moveto 85 (creator_content_type) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+455 320.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 320.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 320.6 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+541 320.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 307.6 moveto 31 (attempts) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+401 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 307.6 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+522 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 294.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 294.6 moveto 62 (creator_object_id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+432 294.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 294.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 294.6 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+549 294.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 281.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 281.6 moveto 31 (failed_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+401 281.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 281.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 281.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+531 281.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 268.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 268.6 moveto 35 (last_error) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+405 268.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 268.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 268.6 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+511 268.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 255.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 255.6 moveto 34 (locked_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+404 255.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 255.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 255.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+531 255.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 242.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 242.6 moveto 36 (locked_by) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 242.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 242.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 242.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+515 242.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 229.6 moveto 25 (priority) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+395 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 229.6 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+522 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 216.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 216.6 moveto 23 (queue) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+393 216.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 216.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 216.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+515 216.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 203.6 moveto 24 (repeat) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+394 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 203.6 moveto 55 (BigIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+534 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 190.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 190.6 moveto 43 (repeat_until) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+413 190.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 190.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 190.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+531 190.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 177.6 moveto 24 (run_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+394 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 177.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+531 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 164.6 moveto 37 (task_hash) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+407 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 164.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+515 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 151.6 moveto 40 (task_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+410 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 151.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+515 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+370 138.6 moveto 46 (task_params) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+416 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+479 138.6 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+511 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+360 125.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+370 125.6 moveto 54 (verbose_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+424 125.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+469 125.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+479 125.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+515 125.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 356.5 119 moveto
+356.5 363 lineto
+561.5 363 lineto
+561.5 119 lineto
+closepath stroke
+grestore
+% background_task_models_Task->django_contrib_contenttypes_models_ContentType
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 419.8558 106.9096 moveto
+415.9201 93.5282 412.2165 80.9361 409.0537 70.1827 curveto
+stroke
+0 0 0 edgecolor
+421.0689 111.0343 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+421.0689 111.0343 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+417 90.6 moveto 148 ( creator_content_type \(background_task\)) alignedtext
+grestore
+% background_task_models_CompletedTask
+gsave
+0 0 1 nodecolor
+newpath 595.5 119 moveto
+595.5 363 lineto
+800.5 363 lineto
+800.5 119 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 597 341 moveto
+597 362 lineto
+800 362 lineto
+800 341 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+645 350 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+655 350 moveto 97 (    CompletedTask    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 333.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+617 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 333.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+758 333.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 320.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 320.6 moveto 85 (creator_content_type) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+694 320.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 320.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 320.6 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+780 320.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 307.6 moveto 31 (attempts) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+640 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 307.6 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 307.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 294.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 294.6 moveto 62 (creator_object_id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+671 294.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 294.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 294.6 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+788 294.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 281.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 281.6 moveto 31 (failed_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+640 281.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 281.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 281.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+770 281.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 268.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 268.6 moveto 35 (last_error) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+644 268.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 268.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 268.6 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+750 268.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 255.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 255.6 moveto 34 (locked_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 255.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 255.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 255.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+770 255.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 242.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 242.6 moveto 36 (locked_by) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+645 242.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 242.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 242.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+754 242.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 229.6 moveto 25 (priority) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+634 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 229.6 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 229.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 216.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 216.6 moveto 23 (queue) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+632 216.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 216.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 216.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+754 216.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 203.6 moveto 24 (repeat) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 203.6 moveto 55 (BigIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+773 203.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 190.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 190.6 moveto 43 (repeat_until) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+652 190.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 190.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 190.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+770 190.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 177.6 moveto 24 (run_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 177.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+770 177.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 164.6 moveto 37 (task_hash) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+646 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 164.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+754 164.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 151.6 moveto 40 (task_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+649 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 151.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+754 151.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+609 138.6 moveto 46 (task_params) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+655 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+718 138.6 moveto 32 (TextField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+750 138.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+599 125.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+609 125.6 moveto 54 (verbose_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+663 125.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+708 125.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+718 125.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+754 125.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 595.5 119 moveto
+595.5 363 lineto
+800.5 363 lineto
+800.5 119 lineto
+closepath stroke
+grestore
+% background_task_models_CompletedTask->django_contrib_contenttypes_models_ContentType
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 596.8495 109.438 moveto
+587.9415 101.5995 578.632 94.3375 569 88 curveto
+539.2204 68.406 501.7077 55.9076 469.5016 48.0906 curveto
+stroke
+0 0 0 edgecolor
+599.9838 112.2705 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+599.9838 112.2705 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+578 90.6 moveto 189 ( creator_content_type \(completed_background_task\)) alignedtext
+grestore
+% django_contrib_auth_models_AbstractUser
+gsave
+0 0 1 nodecolor
+newpath 787.5 425 moveto
+787.5 587 lineto
+996.5 587 lineto
+996.5 425 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 789 556 moveto
+789 586 lineto
+996 586 lineto
+996 556 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+851 574 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+861 574 moveto 73 (    AbstractUser) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+794 564 moveto 7 (<) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+801 564 moveto 171 (AbstractBaseUser,PermissionsMixin) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+972 564 moveto 19 (>    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 548.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 548.6 moveto 42 (date_joined) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+843 548.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 548.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 548.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+953 548.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 535.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+801 535.6 moveto 19 (email) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+820 535.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 535.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+901 535.6 moveto 37 (EmailField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+938 535.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 522.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+801 522.6 moveto 38 (first_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+839 522.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 522.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+901 522.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+937 522.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 509.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 509.6 moveto 31 (is_active) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+832 509.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 509.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 509.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+948 509.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 496.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 496.6 moveto 25 (is_staff) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+826 496.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 496.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 496.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+948 496.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 483.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 483.6 moveto 46 (is_superuser) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+847 483.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 483.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 483.6 moveto 47 (BooleanField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+948 483.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 470.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+801 470.6 moveto 34 (last_login) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+835 470.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 470.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+901 470.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+953 470.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 457.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+801 457.6 moveto 37 (last_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+838 457.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 457.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+901 457.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+937 457.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 444.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 444.6 moveto 35 (password) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+836 444.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 444.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 444.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+937 444.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+791 431.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 431.6 moveto 37 (username) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+838 431.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+891 431.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+901 431.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+937 431.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 787.5 425 moveto
+787.5 587 lineto
+996.5 587 lineto
+996.5 425 lineto
+closepath stroke
+grestore
+% django_contrib_auth_base_user_AbstractBaseUser
+gsave
+0 0 1 nodecolor
+newpath 983 230.5 moveto
+983 251.5 lineto
+1099 251.5 lineto
+1099 230.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 983 230 moveto
+983 251 lineto
+1099 251 lineto
+1099 230 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+987.5 238.4 moveto 5 (  ) alignedtext
+0 0 1 nodecolor
+12 /Roboto set_font
+992.5 238.4 moveto 97 (AbstractBaseUser) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+1089.5 238.4 moveto 5 (  ) alignedtext
+grestore
+% django_contrib_auth_models_AbstractUser->django_contrib_auth_base_user_AbstractBaseUser
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 939.7593 420.6999 moveto
+969.6368 367.9633 1006.13 303.5491 1026.1265 268.2533 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1029.4258 269.5301 moveto
+1031.3099 259.1041 lineto
+1023.3353 266.0795 lineto
+closepath stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+962.5 396.6 moveto 31 ( abstract) alignedtext
+0 0 0 edgecolor
+8 /Roboto set_font
+958 387.6 moveto 40 (inheritance) alignedtext
+grestore
+% django_contrib_auth_models_PermissionsMixin
+gsave
+0 0 1 nodecolor
+newpath 835 230.5 moveto
+835 251.5 lineto
+949 251.5 lineto
+949 230.5 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 835 230 moveto
+835 251 lineto
+949 251 lineto
+949 230 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+839.5 238.4 moveto 5 (  ) alignedtext
+0 0 1 nodecolor
+12 /Roboto set_font
+844.5 238.4 moveto 95 (PermissionsMixin) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+939.5 238.4 moveto 5 (  ) alignedtext
+grestore
+% django_contrib_auth_models_AbstractUser->django_contrib_auth_models_PermissionsMixin
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 892 420.6999 moveto
+892 368.414 892 304.6493 892 269.1646 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 895.5001 269.1041 moveto
+892 259.1041 lineto
+888.5001 269.1041 lineto
+closepath stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+896.5 396.6 moveto 31 ( abstract) alignedtext
+0 0 0 edgecolor
+8 /Roboto set_font
+892 387.6 moveto 40 (inheritance) alignedtext
+grestore
+% dashboard_users_models_User->django_contrib_auth_models_Permission
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 366.3496 636.3866 moveto
+366.7716 563.8136 360.8265 466.2708 333 385 curveto
+321.1053 350.2599 298.916 315.6258 279.1948 289.1447 curveto
+stroke
+0 0 0 edgecolor
+366.3102 640.664 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+366.3102 640.664 4 4 ellipse_path stroke
+0 0 0 edgecolor
+276.654 285.7837 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+276.654 285.7837 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+366 504.1 moveto 89 ( user_permissions \(user\)) alignedtext
+grestore
+% dashboard_users_models_User->django_contrib_auth_models_Group
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 302.5242 637.5789 moveto
+300.9476 634.035 299.4341 630.5024 298 627 curveto
+286.7213 599.4547 277.752 566.8919 271.8639 542.642 curveto
+stroke
+0 0 0 edgecolor
+304.185 641.2235 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+304.185 641.2235 4 4 ellipse_path stroke
+0 0 0 edgecolor
+270.9128 538.6473 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+270.9128 538.6473 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+298 616.1 moveto 52 ( groups \(user\)) alignedtext
+grestore
+% dashboard_users_models_User->django_contrib_auth_models_AbstractUser
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 443.0954 705.6678 moveto
+530.4669 667.0005 669.6586 605.3997 769.8945 561.0391 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 771.4375 564.1838 moveto
+779.1656 556.9362 lineto
+768.6046 557.7826 lineto
+closepath stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+663.5 620.6 moveto 31 ( abstract) alignedtext
+0 0 0 edgecolor
+8 /Roboto set_font
+659 611.6 moveto 40 (inheritance) alignedtext
+grestore
+% dashboard_patients_models_Patient
+gsave
+0 0 1 nodecolor
+newpath 776 686 moveto
+776 800 lineto
+934 800 lineto
+934 686 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 777 778 moveto
+777 799 lineto
+933 799 lineto
+933 778 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+821.5 787 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+831.5 787 moveto 57 (    Patient    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 770.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+789 770.6 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 770.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 770.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+869 770.6 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+909 770.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 757.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+789 757.6 moveto 56 (admission_date) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+845 757.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 757.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+869 757.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+921 757.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 744.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+789 744.6 moveto 39 (created_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+828 744.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 744.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+869 744.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+921 744.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 731.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+789 731.6 moveto 52 (dismissal_date) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+841 731.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 731.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+869 731.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+921 731.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 718.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+789 718.6 moveto 38 (first_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+827 718.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 718.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+869 718.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+905 718.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 705.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+789 705.6 moveto 37 (last_name) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+826 705.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 705.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+869 705.6 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+905 705.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+779 692.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+789 692.6 moveto 41 (updated_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+830 692.6 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+859 692.6 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+869 692.6 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+921 692.6 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 776 686 moveto
+776 800 lineto
+934 800 lineto
+934 686 lineto
+closepath stroke
+grestore
+% dashboard_patients_HistoricalReport
+gsave
+0 0 1 nodecolor
+newpath 346 1547 moveto
+346 2220 lineto
+560 2220 lineto
+560 1547 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 347 2197.5 moveto
+347 2218.5 lineto
+559 2218.5 lineto
+559 2197.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+397.5 2206.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+407.5 2206.5 moveto 101 (    HistoricalReport    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2190.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 2190.1 moveto 40 (history_id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+399 2190.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2190.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 2190.1 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+517 2190.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2177.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2177.1 moveto 49 (changed_by) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+408 2177.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2177.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2177.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+539 2177.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2164.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 2164.1 moveto 63 (history_relation) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+422 2164.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2164.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 2164.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+539 2164.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2151.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 2151.1 moveto 50 (history_user) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+409 2151.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2151.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 2151.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+539 2151.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2138.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2138.1 moveto 28 (patient) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+387 2138.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2138.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2138.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+539 2138.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2125.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2125.1 moveto 27 (abd_cir) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+386 2125.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2125.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2125.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 2125.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2112.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2112.1 moveto 34 (additional) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+393 2112.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2112.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2112.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 2112.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2099.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2099.1 moveto 25 (bp_dia) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+384 2099.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2099.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2099.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 2099.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2086.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2086.1 moveto 25 (bp_sys) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+384 2086.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2086.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2086.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 2086.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2073.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2073.1 moveto 39 (created_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+398 2073.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2073.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2073.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+529 2073.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2060.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2060.1 moveto 31 (datetime) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+390 2060.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2060.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2060.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+529 2060.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2047.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2047.1 moveto 47 (day_of_fever) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+406 2047.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2047.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2047.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 2047.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2034.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 2034.1 moveto 28 (daytime) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+387 2034.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2034.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 2034.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 2034.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2021.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2021.1 moveto 13 (diet) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+372 2021.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2021.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2021.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 2021.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 2008.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 2008.1 moveto 19 (fever) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+378 2008.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 2008.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 2008.1 moveto 46 (DecimalField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+523 2008.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1995.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1995.1 moveto 42 (fi_eight_hrs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+401 1995.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1995.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1995.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1995.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1982.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1982.1 moveto 22 (fi_oral) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+381 1982.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1982.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1982.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1982.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1969.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1969.1 moveto 28 (fi_other) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+387 1969.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1969.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1969.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1969.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1956.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1956.1 moveto 46 (fi_parenteral) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+405 1956.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1956.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1956.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1956.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1943.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1943.1 moveto 24 (fi_total) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+383 1943.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1943.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1943.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1943.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1930.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1930.1 moveto 37 (fluid_input) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+396 1930.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1930.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1930.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1930.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1917.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1917.1 moveto 42 (fluid_output) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+401 1917.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1917.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1917.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1917.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1904.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1904.1 moveto 43 (fo_drainage) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+402 1904.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1904.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1904.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1904.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1891.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1891.1 moveto 45 (fo_eight_hrs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+404 1891.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1891.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1891.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1891.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1878.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1878.1 moveto 37 (fo_emesis) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+396 1878.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1878.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1878.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1878.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1865.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1865.1 moveto 27 (fo_total) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+386 1865.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1865.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1865.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1865.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1852.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1852.1 moveto 19 (fo_uf) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+378 1852.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1852.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1852.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1852.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1839.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1839.1 moveto 30 (fo_urine) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+389 1839.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1839.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1839.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1839.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1826.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1826.1 moveto 22 (height) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+381 1826.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1826.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1826.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1826.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1813.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1813.1 moveto 38 (hematocrit) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+397 1813.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1813.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1813.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1813.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1800.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 1800.1 moveto 84 (history_change_reason) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+443 1800.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1800.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 1800.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 1800.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1787.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 1787.1 moveto 44 (history_date) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+403 1787.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1787.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 1787.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+529 1787.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1774.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 1774.1 moveto 43 (history_type) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+402 1774.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1774.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 1774.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 1774.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1761.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1761.1 moveto 7 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+366 1761.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1761.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1761.1 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+520 1761.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1748.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1748.1 moveto 55 (medical_advice) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+414 1748.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1748.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1748.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 1748.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1735.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1735.1 moveto 68 (monitoring_interval) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+427 1735.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1735.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1735.1 moveto 63 (SmallIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+540 1735.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1722.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1722.1 moveto 20 (o2sat) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+379 1722.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1722.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1722.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1722.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1709.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1709.1 moveto 40 (pain_score) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+399 1709.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1709.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1709.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1709.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1696.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1696.1 moveto 26 (platelet) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+385 1696.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1696.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1696.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1696.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1683.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1683.1 moveto 19 (pulse) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+378 1683.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1683.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1683.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1683.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1670.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1670.1 moveto 38 (respiration) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+397 1670.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1670.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1670.1 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+520 1670.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1657.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1657.1 moveto 22 (status) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+381 1657.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1657.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1657.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 1657.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1644.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+359 1644.1 moveto 94 (status_changed_to_critical) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+453 1644.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1644.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+477 1644.1 moveto 45 (MonitorField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+522 1644.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1631.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1631.1 moveto 21 (stools) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+380 1631.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1631.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1631.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1631.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1618.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1618.1 moveto 41 (updated_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+400 1618.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1618.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1618.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+529 1618.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1605.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1605.1 moveto 19 (urine) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+378 1605.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1605.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1605.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1605.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1592.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1592.1 moveto 52 (warning_signs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+411 1592.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1592.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1592.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+513 1592.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1579.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1579.1 moveto 15 (wbc) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+374 1579.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1579.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1579.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1579.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1566.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1566.1 moveto 24 (weight) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+383 1566.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1566.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1566.1 moveto 46 (DecimalField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+523 1566.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+349 1553.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+359 1553.1 moveto 35 (weight_ht) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+394 1553.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+467 1553.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+477 1553.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+547 1553.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 346 1547 moveto
+346 2220 lineto
+560 2220 lineto
+560 1547 lineto
+closepath stroke
+grestore
+% dashboard_patients_HistoricalReport->dashboard_users_models_User
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 334.689 1662.9191 moveto
+310.4568 1607.6808 288.5388 1547.4417 276 1489 curveto
+247.8898 1357.9816 240.2978 1015.1563 276 886 curveto
+280.1721 870.9071 286.4202 855.8047 293.6713 841.3809 curveto
+stroke
+0 0 0 edgecolor
+336.3482 1666.6704 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+336.3482 1666.6704 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+276 1185.6 moveto 59 ( changed_by \(+\)) alignedtext
+grestore
+% dashboard_patients_HistoricalReport->dashboard_users_models_User
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 372.0102 1534.7204 moveto
+369.7182 1519.3144 367.692 1504.0235 366 1489 curveto
+339.9619 1257.8056 348.0459 983.6973 355.1562 841.1211 curveto
+stroke
+0 0 0 edgecolor
+372.6332 1538.8316 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+372.6332 1538.8316 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+366 1185.6 moveto 59 ( history_user \(+\)) alignedtext
+grestore
+% dashboard_patients_HistoricalReport->dashboard_patients_models_Patient
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 575.1841 1806.7065 moveto
+674.1522 1737.5824 806.6952 1625.5565 867 1489 curveto
+922.7604 1362.7339 878.5555 1006.0227 880 868 curveto
+880.0419 864.0002 880.4273 862.9771 880 859 curveto
+878.0684 841.0215 874.4845 821.7297 870.6216 804.1813 curveto
+stroke
+0 0 0 edgecolor
+571.7028 1809.1225 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+571.7028 1809.1225 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+896 1185.6 moveto 40 ( patient \(+\)) alignedtext
+grestore
+% dashboard_patients_models_Report
+gsave
+0 0 1 nodecolor
+newpath 630 890 moveto
+630 1485 lineto
+850 1485 lineto
+850 890 lineto
+closepath fill
+0.43503 0.68605 0.33725 nodecolor
+newpath 631 1462.5 moveto
+631 1483.5 lineto
+849 1483.5 lineto
+849 1462.5 lineto
+closepath fill
+0 0 0 nodecolor
+8 /Roboto set_font
+707 1471.5 moveto 10 (    ) alignedtext
+0 0 1 nodecolor
+10 /Roboto set_font
+717 1471.5 moveto 56 (    Report    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1455.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 1455.1 moveto 8 (id) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+651 1455.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1455.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 1455.1 moveto 40 (AutoField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+801 1455.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1442.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 1442.1 moveto 49 (changed_by) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+692 1442.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1442.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 1442.1 moveto 62 (ForeignKey \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+823 1442.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1429.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 1429.1 moveto 28 (patient) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+671 1429.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1429.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 1429.1 moveto 76 (OneToOneField \(id\)) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+837 1429.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1416.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1416.1 moveto 27 (abd_cir) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+670 1416.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1416.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1416.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1416.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1403.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1403.1 moveto 34 (additional) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+677 1403.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1403.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1403.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 1403.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1390.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1390.1 moveto 25 (bp_dia) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+668 1390.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1390.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1390.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1390.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1377.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1377.1 moveto 25 (bp_sys) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+668 1377.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1377.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1377.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1377.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1364.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1364.1 moveto 39 (created_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+682 1364.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1364.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1364.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+813 1364.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1351.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1351.1 moveto 31 (datetime) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+674 1351.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1351.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1351.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+813 1351.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1338.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1338.1 moveto 47 (day_of_fever) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+690 1338.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1338.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1338.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1338.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1325.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 1325.1 moveto 28 (daytime) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+671 1325.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1325.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 1325.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 1325.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1312.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1312.1 moveto 13 (diet) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+656 1312.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1312.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1312.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 1312.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1299.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1299.1 moveto 19 (fever) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+662 1299.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1299.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1299.1 moveto 46 (DecimalField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+807 1299.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1286.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1286.1 moveto 42 (fi_eight_hrs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+685 1286.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1286.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1286.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1286.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1273.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1273.1 moveto 22 (fi_oral) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+665 1273.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1273.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1273.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1273.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1260.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1260.1 moveto 28 (fi_other) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+671 1260.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1260.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1260.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1260.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1247.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1247.1 moveto 46 (fi_parenteral) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+689 1247.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1247.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1247.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1247.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1234.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1234.1 moveto 24 (fi_total) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+667 1234.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1234.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1234.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1234.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1221.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1221.1 moveto 37 (fluid_input) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+680 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1221.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1221.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1221.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1208.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1208.1 moveto 42 (fluid_output) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+685 1208.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1208.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1208.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1208.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1195.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1195.1 moveto 43 (fo_drainage) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+686 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1195.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1195.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1195.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1182.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1182.1 moveto 45 (fo_eight_hrs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+688 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1182.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1182.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1182.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1169.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1169.1 moveto 37 (fo_emesis) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+680 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1169.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1169.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1169.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1156.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1156.1 moveto 27 (fo_total) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+670 1156.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1156.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1156.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1156.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1143.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1143.1 moveto 19 (fo_uf) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+662 1143.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1143.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1143.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1143.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1130.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1130.1 moveto 30 (fo_urine) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+673 1130.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1130.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1130.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1130.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1117.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1117.1 moveto 22 (height) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+665 1117.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1117.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1117.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1117.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1104.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1104.1 moveto 38 (hematocrit) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+681 1104.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1104.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1104.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1104.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1091.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1091.1 moveto 55 (medical_advice) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+698 1091.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1091.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1091.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 1091.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1078.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1078.1 moveto 68 (monitoring_interval) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+711 1078.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1078.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1078.1 moveto 63 (SmallIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+824 1078.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1065.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1065.1 moveto 20 (o2sat) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+663 1065.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1065.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1065.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1065.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1052.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1052.1 moveto 40 (pain_score) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+683 1052.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1052.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1052.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1052.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1039.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1039.1 moveto 26 (platelet) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+669 1039.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1039.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1039.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1039.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1026.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1026.1 moveto 19 (pulse) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+662 1026.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1026.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1026.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 1026.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1013.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1013.1 moveto 38 (respiration) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+681 1013.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1013.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1013.1 moveto 43 (IntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+804 1013.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 1000.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 1000.1 moveto 22 (status) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+665 1000.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 1000.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 1000.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 1000.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 987.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+643 987.1 moveto 94 (status_changed_to_critical) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+737 987.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 987.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+761 987.1 moveto 45 (MonitorField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+806 987.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 974.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 974.1 moveto 21 (stools) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+664 974.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 974.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 974.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 974.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 961.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 961.1 moveto 41 (updated_at) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+684 961.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 961.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 961.1 moveto 52 (DateTimeField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+813 961.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 948.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 948.1 moveto 19 (urine) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+662 948.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 948.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 948.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 948.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 935.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 935.1 moveto 52 (warning_signs) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+695 935.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 935.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 935.1 moveto 36 (CharField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+797 935.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 922.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 922.1 moveto 15 (wbc) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+658 922.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 922.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 922.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 922.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 909.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 909.1 moveto 24 (weight) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+667 909.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 909.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 909.1 moveto 46 (DecimalField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+807 909.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+633 896.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+643 896.1 moveto 35 (weight_ht) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+678 896.1 moveto 10 (    ) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+751 896.1 moveto 10 (    ) alignedtext
+0 0 0.48235 nodecolor
+8 /Roboto set_font
+761 896.1 moveto 70 (PositiveIntegerField) alignedtext
+0 0 0 nodecolor
+8 /Roboto set_font
+831 896.1 moveto 10 (    ) alignedtext
+1 setlinewidth
+solid
+0 0 0 nodecolor
+newpath 630 890 moveto
+630 1485 lineto
+850 1485 lineto
+850 890 lineto
+closepath stroke
+grestore
+% dashboard_patients_HistoricalReport->dashboard_patients_models_Report
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 571.2044 1596.6678 moveto
+587.967 1556.1338 605.2052 1514.4499 621.9646 1473.9236 curveto
+stroke
+0 0 0 edgecolor
+569.6089 1600.5261 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+569.6089 1600.5261 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+606 1514.1 moveto 79 ( history_relation \(logs\)) alignedtext
+grestore
+% dashboard_patients_models_Report->dashboard_users_models_User
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 616.6456 890.1597 moveto
+615.441 888.76 614.2258 887.3732 613 886 curveto
+566.9334 834.3953 497.4792 797.212 443.1444 773.8715 curveto
+stroke
+0 0 0 edgecolor
+619.2897 893.3134 4 4 ellipse_path fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+619.2897 893.3134 4 4 ellipse_path stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+592 861.6 moveto 76 ( changed_by \(report\)) alignedtext
+grestore
+% dashboard_patients_models_Report->dashboard_patients_models_Patient
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 811.7629 885.5899 moveto
+814.1663 876.6169 816.5815 867.7372 819 859 curveto
+823.9671 841.0554 829.8316 821.6884 835.3693 804.0569 curveto
+stroke
+0 0 0 edgecolor
+8 /Roboto set_font
+819 861.6 moveto 61 ( patient \(reports\)) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 1314 2268
+end
+restore
+%%EOF

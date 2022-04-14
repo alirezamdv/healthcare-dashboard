@@ -1,0 +1,279 @@
+{
+    "$id": "dengue.json",
+    "$schema": "dengue schema",
+    "default": {},
+    "description": "The root schema comprises the entire JSON document.",
+    "examples": [
+        {
+            "incidence_nolag": "incidencerate1",
+            "occ2": "Employee",
+            "age": "a15_20",
+            "UD2": "Yes",
+            "feverdays": "d1_3",
+            "NS1": "Positive",
+            "wbc_d0": "r0_35",
+            "plt": "r0_106",
+            "lymp_d0": "r0_17",
+            "hct_d0": "r0_328",
+            "atypl_d0": "r0_1",
+            "AST_ALT": "r1_13",
+            "tourniquettest": "s1",
+            "nausea": "Yes",
+            "bleeding": "Yes",
+            "petechiae": "s1",
+            "myalgia": "Yes"
+        }
+    ],
+    "required": [],
+    "title": "The root schema",
+    "type": "object",
+    "properties": {
+        "incidence_nolag": {
+            "$id": "#/properties/incidence_nolag",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "enum": [
+                "incidencerate1",
+                "incidencerate2"
+            ],
+            "examples": [
+                "incidencerate1"
+            ],
+            "title": "The incidence_nolag schema",
+            "type": "string"
+        },
+        "occ2": {
+            "$id": "#/properties/occ2",
+            "default": "",
+            "description": "Occupation",
+            "examples": [
+                "Employee"
+            ],
+            "title": "The occ2 schema",
+            "enum": [
+                "Employee",
+                "Officer",
+                "Student",
+                "Other"
+            ],
+            "type": "string"
+        },
+        "age": {
+            "$id": "#/properties/age",
+            "default": "",
+            "description": "age",
+            "examples": [
+                "a15_20"
+            ],
+            "title": "The age schema",
+            "enum": [
+                "a15_20",
+                "a21_55",
+                "a56_80"
+            ],
+            "type": "string"
+        },
+        "UD2": {
+            "$id": "#/properties/UD2",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Yes"
+            ],
+            "title": "The UD2 schema",
+            "enum": [
+                "Yes",
+                "No"
+            ],
+            "type": "string"
+        },
+        "feverdays": {
+            "$id": "#/properties/feverdays",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "d1_3"
+            ],
+            "title": "The feverdays schema",
+            "enum": [
+                "d1_3",
+                "d3_5",
+                "d5_14"
+            ],
+            "type": "string"
+        },
+        "NS1": {
+            "$id": "#/properties/NS1",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Positive"
+            ],
+            "title": "The NS1 schema",
+            "enum": [
+                "Positive",
+                "Negative"
+            ],
+            "type": "string"
+        },
+        "wbc_d0": {
+            "$id": "#/properties/wbc_d0",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r0_35"
+            ],
+            "title": "The wbc_d0 schema",
+            "enum": [
+                "r0_35",
+                "r35_45",
+                "r45_73",
+                "r73_260"
+            ],
+            "type": "string"
+        },
+        "plt": {
+            "$id": "#/properties/plt",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r0_106"
+            ],
+            "title": "The plt schema",
+            "enum": [
+                "r0_106",
+                "r106_178",
+                "r178_590"
+            ],
+            "type": "string"
+        },
+        "lymp_d0": {
+            "$id": "#/properties/lymp_d0",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r0_17"
+            ],
+            "title": "The lymp_d0 schema",
+            "enum": [
+                "r0_17",
+                "r17_61"
+            ],
+            "type": "string"
+        },
+        "hct_d0": {
+            "$id": "#/properties/hct_d0",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r0_328"
+            ],
+            "title": "The hct_d0 schema",
+            "enum": [
+                "r0_328",
+                "r328_560"
+            ],
+            "type": "string"
+        },
+        "atypl_d0": {
+            "$id": "#/properties/atypl_d0",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r0_1"
+            ],
+            "title": "The atypl_d0 schema",
+            "enum": [
+                "r0_1",
+                "r1_5",
+                "r5_45"
+            ],
+            "type": "string"
+        },
+        "AST_ALT": {
+            "$id": "#/properties/AST_ALT",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "r1_13"
+            ],
+            "title": "The AST_ALT schema",
+            "enum": [
+                "r1_13",
+                "r13_45"
+            ],
+            "type": "string"
+        },
+        "tourniquettest": {
+            "$id": "#/properties/tourniquettest",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "enum": [
+                "s1",
+                "s0"
+            ],
+            "examples": [
+                "s1"
+            ],
+            "title": "The tourniquettest schema",
+            "type": "string"
+        },
+        "nausea": {
+            "$id": "#/properties/nausea",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Yes"
+            ],
+            "title": "The nausea schema",
+            "enum": [
+                "Yes",
+                "No"
+            ],
+            "type": "string"
+        },
+        "bleeding": {
+            "$id": "#/properties/bleeding",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Yes"
+            ],
+            "title": "The bleeding schema",
+            "enum": [
+                "Yes",
+                "No"
+            ],
+            "type": "string"
+        },
+        "petechiae": {
+            "$id": "#/properties/petechiae",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "s1"
+            ],
+            "title": "The petechiae schema",
+            "enum": [
+                "s1",
+                "s0"
+            ],
+            "type": "string"
+        },
+        "myalgia": {
+            "$id": "#/properties/myalgia",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Yes"
+            ],
+            "title": "The myalgia schema",
+            "enum": [
+                "Yes",
+                "No"
+            ],
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

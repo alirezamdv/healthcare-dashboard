@@ -1,0 +1,20 @@
+{
+  "incidence_nolag":"incidencerate1",
+  "occ2": "Employee",
+  "age": "a21_55",
+  "UD2": "No",
+  "feverdays": "d1_3",
+  "wbc_d0": "r45_73",
+  "NS1": "Negative",
+  "plt": "r178_590",
+  "lymp_d0": "r0_17",
+  "hct_d0": "r0_328",
+  "atypl_d0": "r1_5",
+  "AST_ALT": "r1_13",
+  "tourniquettest": "s0",
+  "nausea": "Yes",
+  "bleeding": "Yes",
+  "petechiae": "s0",
+  "myalgia": "Yes"
+
+}

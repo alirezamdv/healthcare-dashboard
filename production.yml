@@ -1,0 +1,77 @@
+version: '3'
+
+volumes:
+  production_postgres_data: { }
+  production_postgres_data_backups: { }
+  production_traefik: { }
+
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: dengue_dashboard_production_postgres
+    volumes:
+      - production_postgres_data:/var/lib/postgresql/data:Z
+      - production_postgres_data_backups:/backups:z
+    env_file:
+      - ./.envs/.production/.postgres
+    ports:
+      - "$postgres_port:$postgres_port"
+    command: -p $postgres_port
+    networks:
+      - main
+
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/production/django/Dockerfile
+    image: dengue_dashboard_production_django
+    ports:
+      - "$django_port:$django_port"
+    environment:
+      - ENVIRONMENT=PRODUCTION
+      - HOST=134.102.219.164
+      - PORT=$django_port
+    networks:
+      - main
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - $django_config_path
+      - $postgres_config_path
+    command: /start $django_port
+
+  smile_api:
+    build:
+      context: .
+      dockerfile: smile_api/Dockerfile
+    depends_on:
+      - django
+    ports:
+      - "$smile_port:5000"
+    networks:
+      - main
+
+  dhf_api:
+    build:
+      context: .
+      dockerfile: dhf_api/Dockerfile
+    container_name: dhf_api
+    depends_on:
+      - django
+    ports:
+    - "$dhf_port:5000"
+    networks:
+      - main
+
+  redis:
+    image: redis:5.0
+    networks:
+      - main
+
+networks:
+  main:
+    driver: bridge
+

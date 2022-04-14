@@ -1,0 +1,6 @@
+#FROM ubuntu:20.04
+FROM python:3.8-slim
+COPY . ./dhf-api
+WORKDIR /dhf-api
+RUN pip install -r requirements.txt
+CMD ["uvicorn" , "--host", "0.0.0.0","--reload", "--port", "5000", "app.main:app" ]

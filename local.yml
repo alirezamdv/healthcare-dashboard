@@ -1,0 +1,56 @@
+version: '3.7'
+
+volumes:
+  local_postgres_data: {}
+  local_postgres_data_backups: {}
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./compose/local/django/Dockerfile
+    image: dengue_dashboard_local_django
+    container_name: django
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app:z
+    env_file:
+      - ./.envs/.local/.django
+      - ./.envs/.local/.postgres
+    ports:
+      - "8000:8000"
+    command: /start
+
+  smile_api:
+    build:
+      context: .
+      dockerfile: smile_api/Dockerfile
+    ports:
+    - "5000:5000"
+
+  dhf_api:
+    build:
+      context: .
+      dockerfile: dhf_api/Dockerfile
+    container_name: dhf_api
+    ports:
+    - "5001:5000"
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: dengue_dashboard_production_postgres
+    container_name: postgres
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data:Z
+      - local_postgres_data_backups:/backups:z
+    env_file:
+      - ./.envs/.local/.postgres
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis
+    container_name: redis

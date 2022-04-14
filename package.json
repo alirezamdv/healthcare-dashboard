@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "command": "cd vue_frontend && npm install && npm run build"
+  }
+}

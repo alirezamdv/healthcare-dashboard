@@ -1,0 +1,9 @@
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+DJANGO_SETTINGS_MODULE=config.settings.production
+DJANGO_SECRET_KEY=0x!b#(1*cd73w$&azzc6p+essg7v=g80ls#z&xcx*mpemx&@9$
+DJANGO_ALLOWED_HOSTS=social.informatik.uni-bremen.de
+DJANGO_ADMIN_URL=admin
+DATABASE_URL=postgres://debug:debug@postgres:5434/postgres
